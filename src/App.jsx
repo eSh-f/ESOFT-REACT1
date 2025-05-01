@@ -1,16 +1,11 @@
-import { useState } from 'react'
 import './App.css'
+import Container from "./components/Container.jsx";
 
-function App(props) {
-  const [count, setCount] = useState(0)
+function App() {
 
-  return (
+    return (
     <>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          name {props.name} count is {count}
-        </button>
-      </div>
+        <Container/>
     </>
   )
 }
